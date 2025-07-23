@@ -1,0 +1,164 @@
+<!DOCTYPE html>  <html lang="es">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>HyperStorage6D v2</title>  
+  <style>  
+    /* RESET */  
+    * {  
+      margin: 0;  
+      padding: 0;  
+      box-sizing: border-box;  
+    }  body {  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  background-color: #f4f0f0;  
+  color: #333;  
+  padding: 1rem;  
+}  
+
+.container {  
+  max-width: 900px;  
+  margin: auto;  
+  padding: 1rem;  
+}  
+
+h1 {  
+  text-align: center;  
+  margin-bottom: 2rem;  
+  font-size: 2rem;  
+  color: #0d6efd;  
+}  
+
+.section {  
+  background: white;  
+  padding: 1.5rem;  
+  margin-bottom: 2rem;  
+  border-radius: 12px;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+}  
+
+.section h2 {  
+  margin-bottom: 1rem;  
+  font-size: 1.3rem;  
+  color: #0a58ca;  
+}  
+
+input[type="file"] {  
+  display: block;  
+  margin-bottom: 1rem;  
+  font-size: 1rem;  
+}  
+
+button {  
+  padding: 0.6rem 1.2rem;  
+  font-size: 1rem;  
+  background-color: #0d6efd;  
+  color: white;  
+  border: none;  
+  border-radius: 6px;  
+  cursor: pointer;  
+  margin-bottom: 1rem;  
+}  
+
+button:hover {  
+  background-color: #0b5ed7;  
+}  
+
+.progress {  
+  width: 100%;  
+  background-color: #e9ecef;  
+  border-radius: 6px;  
+  overflow: hidden;  
+  margin-bottom: 1rem;  
+}  
+
+.progress-bar {  
+  height: 12px;  
+  width: 0;  
+  background-color: #198754;  
+  transition: width 0.3s ease;  
+}  
+
+.stats {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 0.5rem;  
+  margin-bottom: 1rem;  
+}  
+
+.download-link {  
+  display: inline-block;  
+  margin-top: 0.5rem;  
+  color: #0d6efd;  
+  text-decoration: none;  
+  font-weight: bold;  
+}  
+
+.download-link:hover {  
+  text-decoration: underline;  
+}  
+
+@media (max-width: 600px) {  
+  h1 {  
+    font-size: 1.5rem;  
+  }  
+
+  .section h2 {  
+    font-size: 1.1rem;  
+  }  
+
+  button {  
+    width: 100%;  
+  }  
+
+  .stats {  
+    font-size: 0.95rem;  
+  }  
+}
+
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <h1> HyperStorage6D v2</h1>  <div class="section">  
+  <h2>🗜️ Comprimir Archivo</h2>  
+  <input type="file" id="fileInput">  
+  <button id="compressBtn">Comprimir</button>  
+
+  <div class="progress">  
+    <div class="progress-bar" id="compressProgress"></div>  
+  </div>  
+
+  <div class="stats">  
+    <div>Tamaño original: <span id="originalSize">-</span></div>  
+    <div>Tamaño comprimido: <span id="compressedSize">-</span></div>  
+    <div>Ratio: <span id="compressionRatio">-</span></div>  
+  </div>  
+
+  <a id="downloadCompressed" class="download-link">Descargar .hs6d</a>  
+</div>  
+
+<div class="section">  
+  <h2>📂 Descomprimir Archivo</h2>  
+  <input type="file" id="decompressInput" accept=".hs6d">  
+  <button id="decompressBtn">Descomprimir</button>  
+
+  <div class="progress">  
+    <div class="progress-bar" id="decompressProgress"></div>  
+  </div>  
+
+  <div class="stats">  
+    <div>Tamaño comprimido: <span id="inputCompressedSize">-</span></div>  
+    <div>Tamaño descomprimido: <span id="decompressedSize">-</span></div>  
+  </div>  
+
+  <a id="downloadDecompressed" class="download-link">Descargar original</a>  
+</div>
+
+  </div>    <script type="module" src="index-main.js"></script>  </body>    <footer style="margin-top: 60px; text-align: center; font-size: 0.9em; color: #777;">  Copyright © 2025 | HyperStorage6D V2 | Todos los Derechos reservados
+<a href="https://informaticabigbosspy.blogspot.com/p/principal.html"><strong>BIG BOSS Informática || Servicios</strong></a>
+
+  </footer>  
+</html>  
+
+
