@@ -1,7 +1,7 @@
 HyperStorage6D Multicapa
 Compresión real de archivos con algoritmos avanzados implementados en JavaScript. Inspirado en arquitecturas de codificación de 6 dimensiones para almacenamiento eficiente a nivel de bit.
 
-🌐 Sitio en vivo: https://arnaldozpy.github.io/hS6Dv2/
+🌐 Sitio en vivo: https://arnaldozpy.github.io/hS6D-V1/
 
 🔍 ¿Qué hace este sistema?
 Permite subir, comprimir y descomprimir archivos reales desde el navegador utilizando una arquitectura multicapa:
